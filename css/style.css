@@ -144,7 +144,7 @@ span.m-left {
 
 .about h1,
 .work h1, {
-  font-size: 30vh;
+  font-size: 1000px;
   z-index: 0;
   opacity: 0.1;
 }
