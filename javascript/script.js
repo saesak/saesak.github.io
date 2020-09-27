@@ -14,9 +14,9 @@ const mysqlBar = document.querySelectorAll('.bar-mysql')
 
 var t1 = new TimelineLite()
 
-t1.fromTo(pythonBar, 0.75, {width: `calc(0% - 6px)`}, {width: `calc(90% - 6px)`, ease: Power4.easeOut})
-t1.fromTo(reactBar, 0.75, {width: `calc(0% - 6px)`}, {width: `calc(90% - 6px)`, ease: Power4.easeOut})
-t1.fromTo(mysqlBar, 0.75, {width: `calc(0% - 6px)`}, {width: `calc(90% - 6px)`, ease: Power4.easeOut})
+t1.fromTo(pythonBar, 0.75, {width: '0px'}, {width: '60px', ease: Power4.easeOut})
+t1.fromTo(reactBar, 0.75, {width: 'calc(0% - 6px)'}, {width: 'calc(90% - 6px)', ease: Power4.easeOut})
+t1.fromTo(mysqlBar, 0.75, {width: 'calc(0% - 6px)'}, {width: 'calc(90% - 6px)', ease: Power4.easeOut})
 
 const controller = new ScrollMagic.Controller()
 const scene = new ScrollMagic.Scene({
