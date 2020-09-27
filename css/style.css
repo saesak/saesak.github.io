@@ -250,6 +250,10 @@ div[class^='bar-'] {
   width: calc(0 - 6px);
 }
 
+.work-info {
+  color: #FFFFFF
+}
+
 .work-category button { 
   text-transform: capitalize; 
   border: 3px solid #ED5565;
