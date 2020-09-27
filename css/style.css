@@ -187,7 +187,6 @@ span.m-left {
 
 .skills h1,
 .contact h1, {
-  text-align: right;
   font-size: 10rem;
   opacity: 0.1;
 }
@@ -275,6 +274,7 @@ div[class^='category-'] {
 
 
 /*not doing the contact/form part for now cuz i'll just be adding my contact info*/
+
 
 .contact-info {
   color: #FFFFFF
