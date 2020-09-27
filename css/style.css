@@ -144,7 +144,7 @@ span.m-left {
 
 .about h1,
 .work h1, {
-  font-size: 10rem;
+  font-size: 30vh;
   z-index: 0;
   opacity: 0.1;
 }
@@ -275,6 +275,10 @@ div[class^='category-'] {
 
 
 /*not doing the contact/form part for now cuz i'll just be adding my contact info*/
+
+.contact-info {
+  color: #FFFFFF
+}
 
 footer hr {
   border: 2px solid #707070;
