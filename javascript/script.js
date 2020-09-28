@@ -8,7 +8,7 @@ spans.forEach(span => span.addEventListener('mouseout', function(e) {
 }))
 
 //for the level bars
-const pythonBar = document.querySelectorAll('.bar-html')
+const pythonBar = document.querySelectorAll('.bar-python')
 const reactBar = document.querySelectorAll('.bar-react')
 const mysqlBar = document.querySelectorAll('.bar-mysql')
 
