@@ -250,11 +250,15 @@ div[class^='bar-'] {
   width: calc(0 - 6px);
 }
 
+.work {
+  height: 100vh;
+}
+
 .work-info {
   max-width: 900px;
   background-color: #252627;
   box-shadow: 0 0 1.2rem rgba(0,0,0,0.25);
-  padding: 50px;
+  padding: 75px;
   position: relative;
   top: -70px;
   left: 50%;
@@ -310,6 +314,9 @@ div[class^='category-'] {
 
 /*not doing the contact/form part for now cuz i'll just be adding my contact info*/
 
+.contact {
+  height: 100vh;
+}
 
 .contact-info {
   max-width: 900px;
