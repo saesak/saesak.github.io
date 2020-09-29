@@ -261,7 +261,8 @@ div[class^='bar-'] {
   right: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  color: #FFFFFF
+  color: #FFFFFF;
+  display: inline;
 }
 
 .work-category button { 
