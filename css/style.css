@@ -265,29 +265,37 @@ div[class^='bar-'] {
 }
 
 .work-info a {
-  color: #48CFAD;
-  text-transform: uppercase;
+  padding: 12px 25px;
+  background-color: none;
+  border: 3px solid #ED5565;
+  color: #ED5565;
+  font-size: .8rem;
+  letter-spacing: 2px;
+  position: relative;
+  top: 80px;
+  overflow: hidden;
+  transition:.5s;
+  display: inline-block;
 }
 
 .work-info a:hover {
-  text-decoration: underline;
+  color: #fff;
 }
 
-.work-info a:visited {
-  color: #48CFAD;
+.work-info a::before {
+  content: '';
+  background-color: #ED5565;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: .5s;
 }
 
-.work-category button { 
-  text-transform: capitalize; 
-  border: 3px solid #ED5565;
-  padding: 15px 30px;
-  border-radius: 50px;
-  color: #ED5565;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  background-color: #252627;
-  outline: none;
-  cursor: pointer;
+.work-info a:hover::before {
+  height: 100%;
 }
 
 div[class^='category-'] {
