@@ -264,6 +264,19 @@ div[class^='bar-'] {
   color: #FFFFFF;
 }
 
+.work-info a {
+  color: #48CFAD;
+  text-transform: uppercase;
+}
+
+.work-info a:hover {
+  text-decoration: underline;
+}
+
+.work-info a:visited {
+  color: #48CFAD;
+}
+
 .work-category button { 
   text-transform: capitalize; 
   border: 3px solid #ED5565;
