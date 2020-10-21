@@ -37,8 +37,15 @@
         <p>Python / React / MySQL</p>
         <a href='#contact'>contact me</a>
       </div>
-      <div class='profile-image'>
-        <img src='/img/pic_of_me.jpeg' width="642" height="546" alt=''>
+      <div id='pfp-slideshow' data-component='slideshow'>
+        <div role='list'>
+          <div class='slide'>
+            <img src='/img/pic_of_me.jpeg' width="642" height="546" alt=''>
+          </div>
+          <div class=slide'>
+            <img src ='/img/user.png' alt=''>
+          </div>
+        </div>
       </div>
     </div>
     
@@ -109,7 +116,7 @@
       <hr>
     </footer>
     
-    
+    <script src='slideshow.js'></script>
     <script src="/javascript/ScrollMagic.min.js"></script>
     <script src="/javascript/animation.gsap.min.js"></script>
     <script src="/javascript/TimelineLite.min.js"></script>
