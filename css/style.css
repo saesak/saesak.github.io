@@ -143,6 +143,7 @@ span.m-left {
 }
 
 .slideContainer {
+    position: absolute
 	margin-top: 50px;
 	width: 600px;
 	height: 500px;
@@ -150,18 +151,18 @@ span.m-left {
 
 .prevBtn,
 .nextBtn {
-  position: absolute;
-  top: 41%;
-  width: max-content;
-  padding: 30px;
+  position: relative;
+  top: -270px;
+  padding: 20px;
   background-color: #fff;
   color: #ED5565;
   font-weight: bolder;
   font-size: 18px;
 }
 
-.nextBtn {
-  right: 4.3%;
+.nextBtn{
+  top: -293px;
+  margin-left: 99%
 }
 
 .Navdot {
