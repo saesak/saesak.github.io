@@ -132,16 +132,16 @@ span.m-left {
   height: 100%;
 }
 
-.pfp-slideshow {
-  margin-top: 50px;
-}
-
-[data-component="slideshow"] .slide {
+.pfp-slideshow [data-component="slideshow"] .slide {
 	display: none;
 }
 
-[data-component="slideshow"] .slide.active {
+.pfp-slideshow [data-component="slideshow"] .slide.active {
 	display: block;
+}
+
+.pfp-slideshow {
+  margin-top: 50px;
 }
 
 .about {
