@@ -144,9 +144,6 @@ span.m-left {
 
 .slideContainer {
 	margin-top: 50px;
-  max-width: 600px;
-  position: relative;
-	margin: auto;
 }
 
 .prevBtn,
@@ -154,9 +151,9 @@ span.m-left {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 10px;
-  background-color: rgb(255, 255, 75);
-  color: rgb(50, 0, 116);
+  padding: 40px;
+  background-color: #fff;
+  color: #ED5565;
   font-weight: bolder;
   font-size: 18px;
 }
@@ -170,7 +167,7 @@ span.m-left {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: rgb(54, 5, 117);
+  background-color: #fff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -178,12 +175,7 @@ span.m-left {
 
 .selected,
 .Navdot:hover {
-  background-color: #d9ff00;
-}
-
-@media only screen and (max-width: 450px) {
-  .prevBtn,
-  .nextBtn,
+  background-color: #ED5565;
 }
 
 .about {
