@@ -133,11 +133,11 @@ span.m-left {
 }
 
 .pfp-slideshow [data-component="slideshow"] .slide {
-	display: none;
+  display: none;
 }
 
 .pfp-slideshow [data-component="slideshow"] .slide.active {
-	display: block;
+  display: block;
 }
 
 .pfp-slideshow {
