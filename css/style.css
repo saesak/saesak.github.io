@@ -132,12 +132,13 @@ span.m-left {
   height: 100%;
 }
 
-.pfp-slideshow [data-component="slideshow"] .slide {
-  display: none;
+[data-component="slideshow"] .slide {
+	display: none;
+  text-align: center;
 }
 
-.pfp-slideshow [data-component="slideshow"] .slide.active {
-  display: block;
+[data-component="slideshow"] .slide.active {
+	display: block;
 }
 
 .pfp-slideshow {
