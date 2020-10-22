@@ -137,11 +137,11 @@ span.m-left {
 }
 
 [data-component="slideshow"] .slide {
-  display: none;
+	display: none;
 }
 
 [data-component="slideshow"] .slide.active {
-  display: block;
+	display: block;
 }
 
 .about {
