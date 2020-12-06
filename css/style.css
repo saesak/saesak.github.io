@@ -134,11 +134,11 @@ span.m-left {
 
 .Slide {
   display: none;
+  text-align: center;
 }
 
 .Slide img {
   vertical-align: middle;
-  text-align: center;
 }
 
 .slideContainer {
