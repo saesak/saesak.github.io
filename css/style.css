@@ -334,6 +334,12 @@ div[class^='category-'] {
 	justify-self: center;
 }
 
+.work_img_wrap {
+	position: relative;
+	width: 350px;
+	height: 200px;
+}
+
 div.hideCategory {
 	display: none;
 }
