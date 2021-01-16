@@ -329,6 +329,7 @@ button .active {
 
 .work a img {
 	width: 350px;
+	height: 200px;
 	justify-self: center;
 }
 
@@ -348,7 +349,7 @@ div.hideCategory {
   height: 100vh;
 }
 
-.work-info {
+/*.work-info {
   max-width: 900px;
   background-color: #252627;
   box-shadow: 0 0 1.2rem rgba(0,0,0,0.25);
@@ -401,7 +402,7 @@ div[class^='category-'] {
   display: grid; 
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 20px; 
-}
+}*/
 
 /*not doing the work part for now cuz i don't do web dev for skills*/
 
