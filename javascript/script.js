@@ -36,7 +36,7 @@ const showRequiredCategory = event => {
   }
   
   event.classList.add('active')
-  const getCategory = document.querySelector('.category-${getId}')
+  const getCategory = document.querySelector(`.category-${getId}`)
   const categories = document.querySelectorAll('div[class ^= "category-"]')
   for(i=0; i<categories.length; i++) {
     if(categories[i].hasAttribute('class')) {
