@@ -324,6 +324,7 @@ div[class^='category-'] {
 }
 
 .work-category button .active {
+	/* doesn't work for some reason so instead made bg color change in .work-category .active*/
 	color: #fff;
 }
 
@@ -341,76 +342,32 @@ div.hideCategory {
 	display: block;
 }
 
-.contact {
-	margin-top: 50px;
-}
-
 .work {
   height: 100vh;
 }
 
-/*.work-info {
-  max-width: 900px;
-  background-color: #252627;
-  box-shadow: 0 0 1.2rem rgba(0,0,0,0.25);
-  padding: 75px;
-  position: relative;
-  top: -70px;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  color: #FFFFFF;
-}
-
-.work-info a {
-  padding: 12px 25px;
-  background-color: none;
-  border: 3px solid #ED5565;
-  color: #ED5565;
-  font-size: .8rem;
-  letter-spacing: 2px;
-  position: relative;
-  top: 80px;
-  overflow: hidden;
-  transition:.5s;
-  display: inline-block;
-}
-
-.work-info a:hover {
-  color: #fff;
-}
-
-.work-info a::before {
-  content: '';
-  background-color: #ED5565;
-  position: absolute;
-  left: 0;
+.work_img_desc {
+	position: absolute;
   top: 0;
-  width: 100%;
-  height: 0%;
-  z-index: -1;
-  transition: .5s;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #252627;
+  color: #BEBEBE;
+  visibility: hidden;
+  opacity: 0;
+	
+	transition: opacity .2s, visibility .2s;
 }
 
-.work-info a:hover::before {
-  height: 100%;
+.container work:hover .work_img_desc {
+  visibility: visible;
+  opacity: 1;
 }
-
-div[class^='category-'] {
-  margin-top: 50px;
-  display: grid; 
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 20px; 
-}*/
-
-/*not doing the work part for now cuz i don't do web dev for skills*/
-
-
-/*not doing the contact/form part for now cuz i'll just be adding my contact info*/
 
 .contact {
-  height: 100vh;
+	margin-top: 50px;
+	height: 100vh;
 }
 
 .contact-info {
