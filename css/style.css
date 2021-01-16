@@ -355,6 +355,8 @@ div.hideCategory {
 
 .work_img_desc {
   position: absolute;
+  width:350px;
+  height: 203px;
   top: 0;
   bottom: 0;
   left: 0;
@@ -363,8 +365,15 @@ div.hideCategory {
   color: #BEBEBE;
   visibility: hidden;
   opacity: 0;
+  display: table; 
 	
   transition: opacity .2s, visibility .2s;
+}
+
+.work_img_desc p {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;   
 }
 
 .work_img_wrap:hover .work_img_desc {
