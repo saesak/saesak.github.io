@@ -323,7 +323,7 @@ div[class^='category-'] {
 	background-color: #ED5565;
 }
 
-button .active {
+.work-category button .active {
 	color: #fff;
 }
 
