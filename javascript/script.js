@@ -26,6 +26,8 @@ const scene = new ScrollMagic.Scene({
   .setTween(t1)
   .addTo(controller)
 
+
+//for selecting work categories
 const showRequiredCategory = event => {
   const getId = event.id
   const links = document.querySelectorAll('.work-category button')
@@ -48,6 +50,3 @@ const showRequiredCategory = event => {
   getCategory.classList.remove('hideCategory')
   getCategory.classList.add('showCategory')
 }
-
-//didn't do the showing work category
-
