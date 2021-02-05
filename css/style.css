@@ -376,6 +376,11 @@ div.hideCategory {
   display: table-cell;   
 }
 
+.work_img_wrap a {
+	color: #BEBEBE;
+	font-size: 20px;
+}
+
 .work_img_wrap:hover .work_img_desc {
   visibility: visible;
   opacity: 0.8;
