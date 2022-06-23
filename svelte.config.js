@@ -8,7 +8,7 @@ export default {
 			assets: 'docs',
 			domain: null,
 			jekyll: false,
-			fallback: null,
+			fallback: 'index.html',
 			precompress: false
 		}),
 		paths: {
