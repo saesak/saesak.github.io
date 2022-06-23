@@ -12,7 +12,7 @@ export default {
 			precompress: false
 		}),
 		paths: {
-			base: '/saesak.github.io', //repo name
+			base: '', //repo name
 		}
 	}
 };
