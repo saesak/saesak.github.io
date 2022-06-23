@@ -1,7 +1,7 @@
 import {publish} from 'gh-pages'
 
 publish(
-    'public', // path to public directory
+    'docs', // path to public directory
     {
         branch: 'gh-pages',
         repo: 'https://github.com/saesak/saesak.github.io', // Update to point to your repository  
