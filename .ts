@@ -1,0 +1,1 @@
+//to prevent error in tsconfig.json in svelte-kit directory
