@@ -22,20 +22,40 @@ import ProjectComp from "./projectComp.svelte";
                 <p>Resume</p>
             </div>
         </div>
-        <div id="FullStackDev">
+        <div class="category">
             <div class="subtitle">
                 <p>Full Stack Development</p>
             </div>
             <div class="row">
                 <ProjectComp 
                 title="Artz Philly Mobile" image="/img/artzMobile.png"
-                blurb="was goood" link="https://google.com"
+                blurb="was goood" link="https://google.com" 
+                --bubColor="#fbbe08" --liqColor="#fb8b1b"
                 ></ProjectComp>
             </div>
         </div>
-        <div id="MLDL">
+        <div class="category">
             <div class="subtitle">
                 <p>ML/DL Projects</p>
+                <div class="row">
+                    <ProjectComp 
+                    title="Artz Philly Mobile" image="/img/artzMobile.png"
+                    blurb="was goood" link="https://google.com" 
+                    --bubColor="#86e3ca" --liqColor="#04cf99"
+                    ></ProjectComp>
+                    <ProjectComp 
+                    title="Artz Philly Mobile" image="/img/artzMobile.png"
+                    blurb="was goood" link="https://google.com" 
+                    --bubColor="#86e3ca" --liqColor="#04cf99"
+                    ></ProjectComp>
+                </div>
+                <div class="row">
+                    <ProjectComp 
+                    title="Artz Philly Mobile" image="/img/artzMobile.png"
+                    blurb="was goood" link="https://google.com" 
+                    --bubColor="#86e3ca" --liqColor="#04cf99"
+                    ></ProjectComp>
+                </div>
             </div>
         </div>
     </div>
@@ -69,5 +89,11 @@ import ProjectComp from "./projectComp.svelte";
         margin-left: auto;
         font-family: Muli;
         font-size: 4vh;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        gap: 5vw;
+        margin-top: 3vh;
     }
 </style>

@@ -40,12 +40,11 @@
 <style>
     #window {
         justify-content: center;
-        margin-left: 2.5vw;
         margin-right: auto;
         z-index: 2;
     }
     #window img {
-        width: 27vw;
+        width: 28vw;
         height: 30vh;
     }
     #title {
@@ -56,7 +55,7 @@
     #text {
         margin-left: 2.5vw;
         font-size: 2vh;
-        z-index: 1;
+        z-index: 2;
     }
     .liquid {
         position:absolute;
@@ -65,11 +64,11 @@
         width: 100%;
         top: 50%;
         border-radius: 5% 5% 15% 15%;
-        background-color: #fb8b1b;
+        background-color: var(--liqColor);
     }
 
     .cup {
-    width: 32vw;
+    width: fit-content;
     height: 74vh;
     border: 2px solid #030303;
     position: relative;
@@ -82,7 +81,7 @@
     display: flex;
     flex-direction: column;
     box-shadow: 6.0px 12.0px 12.0px hsl(0deg 0% 0% / 0.31);
-    background-color: #faf0ca;
+    background-color: #FFFF;
     }
     @keyframes coffee {
     100% {
@@ -92,11 +91,12 @@
     .bubble {
     height: 15px;
     width: 15px;
-    background-color: #fbbe08;
+    background-color: var(--bubColor);
     border-radius: 50%;
     position: absolute;
     animation: bubbles forwards infinite;
     opacity: 0.6;
+    z-index: 1;
     }
     @keyframes bubbles {
     100% {
