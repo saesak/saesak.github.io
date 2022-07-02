@@ -18,42 +18,64 @@ import ProjectComp from "./projectComp.svelte";
             <div id="title">
                 <p>Projects</p>
             </div>
-            <div id="resume">
-                <p>Resume</p>
-            </div>
         </div>
         <div class="category">
-            <div class="subtitle">
-                <p>Full Stack Development</p>
+            <div id="subtitle-FSD">
+                <p><mark>Full Stack Development</mark></p>
             </div>
             <div class="row">
                 <ProjectComp 
                 title="Artz Philly Mobile" image="/img/artzMobile.png"
-                blurb="was goood" link="https://google.com" 
-                --bubColor="#fbbe08" --liqColor="#fb8b1b"
+                blurb="We used React Native, Django, PostgreSQL, Heroku, Websockets, and some threading to create
+                an app for people living with Dementia. The Artz Philly organization will use this app to more easily
+                connect with their target audience." 
+                link="https://play.google.com/store/apps/details?id=spark.artz.philly&hl=en_US&gl=US" 
+                --bubColor="#fbbe08" --liqColor="#c1e8ac"
+                ></ProjectComp>
+                <ProjectComp 
+                title="Shared Diary Prototype" image="/img/shared-diary.PNG"
+                blurb="I used React, Node.js, and MySQL to create a prototype of an app that people could use
+                to write their diaries together. I thought it would be popular amongst couples." 
+                link="https://github.com/saesak/shared_diary_prototype" 
+                --bubColor="#fbbe08" --liqColor="#c1e8ac"
+                ></ProjectComp>
+            </div>
+            <div class="row">
+                <ProjectComp 
+                title="Spotify Artist Visualizer" image="/img/nets150-visualizer.PNG"
+                blurb="Me and a friend made a spotify artist visualizer for my NETS 150 final project.
+                It gets a number of spotify artists as input and uses BFS to see if those artists
+                are closely related or not. To run the program, simply press the play button
+                and type in inputs as requested." 
+                link="https://colab.research.google.com/drive/14eA9NiZOSFhxRJ_HT_q74PDzr1rRZ5V0?authuser=1" 
+                --bubColor="#fbbe08" --liqColor="#c1e8ac"
+                ></ProjectComp>
+                <ProjectComp 
+                    title="Twitter Depression App" image="/img/twitter-depression.PNG"
+                    blurb="I scraped, explored, preprocessed Twitter data from depressed and non-depressed users using NLP techniques 
+                    and libraries, then trained on an LSTM using Tensorflow, achieving 88% validation accuracy. I deployed the result
+                    to Streamlit." 
+                    link="https://github.com/saesak/streamlit_twitter_depression" 
+                    --bubColor="#fbbe08" --liqColor="#c1e8ac"
                 ></ProjectComp>
             </div>
         </div>
         <div class="category">
-            <div class="subtitle">
-                <p>ML/DL Projects</p>
+            <div id="subtitle-MLDL">
+                <p><mark>ML/DL Projects</mark></p>
                 <div class="row">
                     <ProjectComp 
-                    title="Artz Philly Mobile" image="/img/artzMobile.png"
-                    blurb="was goood" link="https://google.com" 
-                    --bubColor="#86e3ca" --liqColor="#04cf99"
+                    title="2020 Kaggle Machine Learning & Data Science Survey" image="/img/kaggle-survey-comp.PNG"
+                    blurb="I wrote an analysis on South Korea's ML/DL landscape based on surveys done on Kagglers." 
+                    link="https://www.kaggle.com/code/hyunkic/south-korea-home-to-samsung-but-few-ai-experts" 
+                    --bubColor="#ebdad3" --liqColor="#E6AE97"
                     ></ProjectComp>
                     <ProjectComp 
-                    title="Artz Philly Mobile" image="/img/artzMobile.png"
-                    blurb="was goood" link="https://google.com" 
-                    --bubColor="#86e3ca" --liqColor="#04cf99"
-                    ></ProjectComp>
-                </div>
-                <div class="row">
-                    <ProjectComp 
-                    title="Artz Philly Mobile" image="/img/artzMobile.png"
-                    blurb="was goood" link="https://google.com" 
-                    --bubColor="#86e3ca" --liqColor="#04cf99"
+                    title="Kaggle Competition (2020 SIIM-ISIC Melanoma Classification)" image="/img/kaggle-melanoma-comp.PNG"
+                    blurb="I participated in a Kaggle competition classifying benign and malignant Melanoma cells.
+                    My final submission had an AUC score of 0.8442 (maximum score of 1.00), placing me in the top 78th percentile." 
+                    link="https://www.kaggle.com/hyunkic/melanoma-cnn-approach-imgen" 
+                    --bubColor="#ebdad3" --liqColor="#E6AE97"
                     ></ProjectComp>
                 </div>
             </div>
@@ -80,20 +102,31 @@ import ProjectComp from "./projectComp.svelte";
         font-family: Muli;
         font-size: 6vh;
     }
-    #resume{
-        margin-left: auto;
-        font-family: Muli;
-        font-size: 6vh;
-    }
-    .subtitle{
-        margin-left: auto;
+    /*category-FSD {
+        width: 27vw;
+    }*/
+    #subtitle-FSD p{
         font-family: Muli;
         font-size: 4vh;
+    }
+    #subtitle-FSD p mark{
+        background-color: #d9edce;
+    }
+    #subtitle-MLDL p{
+        font-family: Muli;
+        font-size: 4vh;
+    }
+    #subtitle-MLDL p mark{
+        background-color: #f2d0c2;
     }
     .row {
         display: flex;
         flex-direction: row;
         gap: 5vw;
         margin-top: 3vh;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 </style>

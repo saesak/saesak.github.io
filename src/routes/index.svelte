@@ -15,16 +15,16 @@
 		</div>
 		<div id="text-buttons-div">
 			<div id="text-div">
-				<div id="text-intro-1">
-					<p>Hi,</p>
+				<div id="text-intro">
+					<p>Hi, I'm Hyun Ki!</p>
 				</div>
-				<div id="text-intro-2">
-					<p>I'm Hyun Ki!</p>
+				<div id="text-intro-highlight">
+					<img src="/img/highlight-index-title.svg" alt="intro-highlight" />
 				</div>
 				<div id="text-main">
 					<p>Currently, I’m a junior at the University of Pennsylvania studying 
-						Computer Science (CSCI). I’m passionate about software engineering 
-						and the environment. 
+						Computer Science (CSCI). I’m passionate about <mark id="text-main-lime-highlight">software engineering</mark>
+						and the <mark id=text-main-mellow-highlight>environment</mark>. 
 					</p>
 				</div>
 			</div>
@@ -63,15 +63,37 @@
 	#text-div {
 		font-family: Muli;
 	}
-	#text-intro-1 {
-		font-size: 10vh;
+	#text-intro {
+		position: relative;
+		margin-top: 30vh;
+		font-size: 8vh;
+		z-index: 5;
 	}
-	#text-intro-2 {
-		margin-top: -16vh;
-		font-size: 15vh;
+	#text-intro-highlight img{
+		position: absolute;
+		margin-top: -12vh;
+		opacity: 0.6;
+		width: 26vw;
+		z-index: 4;
 	}
 	#text-main {
-		margin-top: -10vh;
+		margin-top: -3vh;
 		font-size: 4vh;
+	}
+	#text-main-lime-highlight {
+		background-image: url("/img/highlight-mellow-green.svg");
+		background-color: white;
+		background-repeat: round;
+		opacity: 0.6;
+		width: auto;
+		z-index: 4;
+	}
+	#text-main-mellow-highlight {
+		background-image: url("/img/highlight-lime-green.svg");
+		background-color: white;
+		background-repeat: round;
+		opacity: 0.6;
+		width: auto;
+		z-index: 4;
 	}
 </style>

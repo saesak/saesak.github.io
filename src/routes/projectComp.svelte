@@ -5,7 +5,7 @@
     export let link;
 
     function handleClick(event) {
-        window.location.href = link;
+        window.open(link, '_blank').focus();
     }
 </script>
 
@@ -38,13 +38,16 @@
 </main>
 
 <style>
+    .cup:hover {
+        border: 2px solid #030303;
+    }
     #window {
         justify-content: center;
         margin-right: auto;
         z-index: 2;
     }
     #window img {
-        width: 28vw;
+        width: 30vw;
         height: 30vh;
     }
     #title {
@@ -53,8 +56,9 @@
         font-weight: 900;
     }
     #text {
-        margin-left: 2.5vw;
-        font-size: 2vh;
+        margin-left: 0.7vw;
+        margin-right: 0.7vw;
+        font-size: 2.2vh;
         z-index: 2;
     }
     .liquid {
@@ -65,12 +69,12 @@
         top: 50%;
         border-radius: 5% 5% 15% 15%;
         background-color: var(--liqColor);
+        opacity: 0.7;
     }
 
     .cup {
     width: fit-content;
     height: 74vh;
-    border: 2px solid #030303;
     position: relative;
     border-radius: 5% 5% 15% 15%;
     /*background: url("/img/coffee-img-1.svg"), url("/img/coffee-img-2.svg");

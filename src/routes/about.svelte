@@ -12,9 +12,6 @@
             <div id="title">
                 <p>About Me</p>
             </div>
-            <div id="resume">
-                <p>Resume</p>
-            </div>
         </div>
         <div id="main-text">
             <p>I’m a junior studying Computer Science (CSCI) at the University of Pennsylvania.</p>
@@ -24,9 +21,9 @@
             <p>You can find me at hyunkic@seas.upenn.edu.</p>
         </div>
         <div id="icons">
-            <a class="linkedin" href="https://www.linkedin.com/in/hyun-ki-cho/">Linkedin</a>
-            <a class="github" href="https://github.com/saesak">Github</a>
-            <a class="resume" href="">Resume</a>
+            <a class="link" href="https://www.linkedin.com/in/hyun-ki-cho/"><mark>Linkedin</mark></a>
+            <a class="link" href="https://github.com/saesak"><mark>Github</mark></a>
+            <a class="link" href="#" onclick='window.open("/img/my-resume.pdf");return false;'><mark>Resume</mark></a>
         </div>
 
         <div class="cup">
@@ -62,10 +59,28 @@
         font-size: 3vh;
         font-family: Muli;
     }
-    .linkedin{
-        background-image: url("/img/linkedin.png");
+    #icons {
+        margin-top: 5vh;
+        text-align: center;
     }
-
+    .link {
+        text-decoration: none;
+        text-decoration-color: inherit;
+        font-size: 4vh;
+        margin-right: 2vw;
+        font-family: Muli;
+    }
+    .link mark {
+        background-color: white;
+        background-image: url("/img/highlight-light-pink.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: 50%;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
     
 
 </style>
