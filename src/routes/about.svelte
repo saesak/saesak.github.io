@@ -1,4 +1,6 @@
 <script>
+    import CustomFooter from "./customFooter.svelte";
+
 
 </script>
 
@@ -21,14 +23,15 @@
             <p>You can find me at hyunkic@seas.upenn.edu.</p>
         </div>
         <div id="icons">
-            <a class="link" href="https://www.linkedin.com/in/hyun-ki-cho/"><mark>Linkedin</mark></a>
-            <a class="link" href="https://github.com/saesak"><mark>Github</mark></a>
-            <a class="link" href="#" onclick='window.open("/img/my-resume.pdf");return false;'><mark>Resume</mark></a>
+            <a class="link" href="https://www.linkedin.com/in/hyun-ki-cho/">Linkedin</a>
+            <a class="link" href="https://github.com/saesak">Github</a>
+            <a class="link" href="#" onclick='window.open("/img/my-resume.pdf");return false;'>Resume</a>
         </div>
 
         <div class="cup">
             
         </div>
+        <CustomFooter></CustomFooter>
     </div>
 </main>
 
@@ -56,7 +59,7 @@
     }
     #main-text{
         margin-top: 5vh;
-        font-size: 3vh;
+        font-size: 2.5vh;
         font-family: Muli;
     }
     #icons {
@@ -64,23 +67,18 @@
         text-align: center;
     }
     .link {
-        text-decoration: none;
-        text-decoration-color: inherit;
         font-size: 4vh;
         margin-right: 2vw;
         font-family: Muli;
-    }
-    .link mark {
-        background-color: white;
-        background-image: url("/img/highlight-light-pink.svg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-position: 50%;
+        text-emphasis-color: inherit;
     }
     a {
-        text-decoration: none;
+        text-decoration: #fadbcf wavy underline;
         color: inherit;
     }
-    
+    a:hover {
+        background-color: #fadbcf;
+    }
+
 
 </style>

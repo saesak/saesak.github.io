@@ -1,4 +1,6 @@
 <script>
+import CustomFooter from "./customFooter.svelte";
+
 import ProjectComp from "./projectComp.svelte";
 
 
@@ -73,13 +75,14 @@ import ProjectComp from "./projectComp.svelte";
                     <ProjectComp 
                     title="Kaggle Competition (2020 SIIM-ISIC Melanoma Classification)" image="/img/kaggle-melanoma-comp.PNG"
                     blurb="I participated in a Kaggle competition classifying benign and malignant Melanoma cells.
-                    My final submission had an AUC score of 0.8442 (maximum score of 1.00), placing me in the top 78th percentile." 
+                    I learned a lot about analyzing picture data and CNNs." 
                     link="https://www.kaggle.com/hyunkic/melanoma-cnn-approach-imgen" 
                     --bubColor="#ebdad3" --liqColor="#E6AE97"
                     ></ProjectComp>
                 </div>
             </div>
         </div>
+        <CustomFooter></CustomFooter>
     </div>
 </main>
 
@@ -128,5 +131,13 @@ import ProjectComp from "./projectComp.svelte";
     a {
         text-decoration: none;
         color: inherit;
+    }
+    @media (max-width: 500px) {
+        .row {
+            display: flex;
+            flex-direction: column;
+            gap: 5vw;
+            margin-top: 3vh;
+        }
     }
 </style>

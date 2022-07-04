@@ -16,7 +16,6 @@
 
 <main>
     <div class = "cup" on:click={handleClick}>
-        <div class="liquid"></div>
         <div class="bubble bubble-1"></div>
         <div class="bubble bubble-2"></div>
         <div class="bubble bubble-3"></div>
@@ -28,19 +27,19 @@
         <div id = "title">
             <p>{title}</p>
         </div>
+        <div class="liquid">
         <div id = "window">
             <img src={image} alt={title}/>
         </div>
         <div id = "text">
             <p>{blurb}</p>
         </div>
+        </div>
     </div>
 </main>
 
 <style>
-    .cup:hover {
-        border: 2px solid #030303;
-    }
+    
     #window {
         justify-content: center;
         margin-right: auto;
@@ -51,9 +50,12 @@
         height: 30vh;
     }
     #title {
-        margin-left: 2.5vw;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 4vh;
         font-weight: 900;
+        margin-bottom: 0;
     }
     #text {
         margin-left: 0.7vw;
@@ -62,17 +64,15 @@
         z-index: 2;
     }
     .liquid {
-        position:absolute;
         z-index: 0;
-        height: 50%;
+        height: 100%;
         width: 100%;
-        top: 50%;
         border-radius: 5% 5% 15% 15%;
         background-color: var(--liqColor);
-        opacity: 0.7;
     }
-
+    
     .cup {
+        border: 2px solid transparent;
     width: fit-content;
     height: 74vh;
     position: relative;
@@ -86,6 +86,9 @@
     flex-direction: column;
     box-shadow: 6.0px 12.0px 12.0px hsl(0deg 0% 0% / 0.31);
     background-color: #FFFF;
+    }
+    .cup:hover {
+        border: 2px solid #030303;
     }
     @keyframes coffee {
     100% {
@@ -148,5 +151,15 @@
     bottom: 30px;
     animation-delay: 1s;
     animation-duration: 4s;
+    }
+    @media (max-width: 500px) {
+        #window img {
+            width: 100%;
+            height: 100%;
+        }
+        .liquid {
+
+        }
+
     }
 </style>

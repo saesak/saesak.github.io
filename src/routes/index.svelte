@@ -3,82 +3,89 @@
 
 
 <svelte:head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 </svelte:head>
 
 <main>
 	<div id="container">
-		<div id="image-div">
-			<div id="pfp">
-				<img src="/img/softnwet.jpg" alt="profile headshot" />
-			</div>
-		</div>
 		<div id="text-buttons-div">
+			<div id="text-intro">
+				<p><mark>Hi, I'm Hyun Ki!</mark></p>
+			</div>
 			<div id="text-div">
-				<div id="text-intro">
-					<p>Hi, I'm Hyun Ki!</p>
-				</div>
-				<div id="text-intro-highlight">
-					<img src="/img/highlight-index-title.svg" alt="intro-highlight" />
-				</div>
 				<div id="text-main">
 					<p>Currently, I’m a junior at the University of Pennsylvania studying 
-						Computer Science (CSCI). I’m passionate about <mark id="text-main-lime-highlight">software engineering</mark>
-						and the <mark id=text-main-mellow-highlight>environment</mark>. 
+						<a href="https://www.cis.upenn.edu/undergraduate/"><u>Computer Science (CSCI)</u></a>. I’m passionate about software engineering
+						and the environment. 
 					</p>
 				</div>
+			</div>
+		</div>
+		<div id="image-div">
+			<div id="pfp">
 			</div>
 		</div>
 	</div>
 </main>
 
 <style>
+	* {
+		font-family: Muli;
+	}
 	#container{
 		display: flex;
 		flex-direction: row;
 		margin-left: 17vw;
         margin-right: 17vw;
+		align-items: center;
 	}
 	#image-div {
-		flex: 1;
-		margin-right: 5vh;
+		height: 35vw;
+		width: 35vw;
 	}
 	#pfp {
 		display:flex;
 		justify-content: center;
-	}
-	#pfp img {
-		width: 32vw;
-		height: 83vh;
-		border-bottom-right-radius: 20vw;
-		border-bottom-left-radius: 20vw;
+		background-image: url("/img/softnwet.jpg");
+		border-radius: 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 100%;
+		width: 100%;
 	}
 	#text-buttons-div {
 		flex: 1.25;
 		display: flex;
 		flex-direction: column;
-		margin-left: 5vh;
 		margin-top: -12.7vh;
-	}
-	#text-div {
-		font-family: Muli;
 	}
 	#text-intro {
 		position: relative;
-		margin-top: 30vh;
-		font-size: 8vh;
+		margin-top: 15vh;
+		font-size: 3em;
 		z-index: 5;
 	}
-	#text-intro-highlight img{
-		position: absolute;
-		margin-top: -12vh;
-		opacity: 0.6;
-		width: 26vw;
-		z-index: 4;
+	#text-intro mark {
+		background-image: url("/img/highlight-index-title.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: white;
+		background-position-y: 1%;
 	}
 	#text-main {
 		margin-top: -3vh;
-		font-size: 4vh;
+		font-size: 1.2em;
+	}
+	#text-main u {
+		text-decoration: #fadbcf wavy underline;
+	}
+	#text-main a {
+		text-decoration: none;
+	}
+	#text-main u:hover {
+		background-color: #fadbcf;
 	}
 	#text-main-lime-highlight {
 		background-image: url("/img/highlight-mellow-green.svg");
@@ -95,5 +102,33 @@
 		opacity: 0.6;
 		width: auto;
 		z-index: 4;
+	}
+
+	@media (max-width: 500px) {
+		#container {
+			display: flex;
+			flex-direction: column;
+		}
+		#text-main {
+			font-size: 1em;
+			text-align: center;
+		}
+		#text-intro {
+			text-align: center;
+			margin-top: 0;
+			position: relative;
+			font-size: 2em;
+			z-index: 5;
+		}
+		#text-buttons-div {
+			flex: 1.25;
+			display: flex;
+			flex-direction: column;
+			margin-top: 0;
+		}
+		#image-div {
+		height: 50vw;
+		width: 50vw;
+		}
 	}
 </style>
