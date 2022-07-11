@@ -17,7 +17,7 @@
         </div>
         <div id="main-text">
             <p>I’m a junior studying Computer Science (CSCI) at the University of Pennsylvania.</p>
-            <p>At Penn, I do web development for external clients with Penn Spark, and co-lead Penn Ink Secret Society, 
+            <p>At Penn, I do web development for external clients with <a href="https://pennspark.org/">Penn Spark</a>, and co-lead Penn Ink Secret Society, 
                 a club that carries out creative writing projects.</p>
             <p>When I’m free, you’ll see me hanging with friends, learning guitar, or writing a new story I came up with.</p>
             <p>You can find me at hyunkic@seas.upenn.edu.</p>
@@ -25,7 +25,6 @@
         <div id="icons">
             <a class="link" href="https://www.linkedin.com/in/hyun-ki-cho/">Linkedin</a>
             <a class="link" href="https://github.com/saesak">Github</a>
-            <a class="link" href="#" onclick='window.open("/img/my-resume.pdf");return false;'>Resume</a>
         </div>
 
         <div class="cup">
