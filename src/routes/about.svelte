@@ -17,8 +17,8 @@
         </div>
         <div id="main-text">
             <p>I’m a junior studying Computer Science (CSCI) at the University of Pennsylvania.</p>
-            <p>At Penn, I do web development for external clients with <a href="https://pennspark.org/">Penn Spark</a>, and co-lead Penn Ink Secret Society, 
-                a club that carries out creative writing projects.</p>
+            <p>At Penn, I do web development for external clients and teach new developers about web development 
+                and backend with <a href="https://pennspark.org/">Penn Spark</a>.</p>
             <p>When I’m free, you’ll see me hanging with friends, learning guitar, or writing a new story I came up with.</p>
             <p>You can find me at hyunkic@seas.upenn.edu.</p>
         </div>
